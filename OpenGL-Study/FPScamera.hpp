@@ -37,6 +37,8 @@ public:
 
 	glm::vec3 getPosition() override;
 
+	glm::vec3 getFront() override;
+
 private:
 	void updateCameraVectors();
 

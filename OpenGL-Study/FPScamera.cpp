@@ -8,7 +8,7 @@ FPSCamera::FPSCamera() {
 	m_yaw = -90.0f; m_pitch = 0.0f; m_roll = 0.0f;
 	m_fov = 45.0f;
 	m_sensitivity = 0.1f;
-	m_speed = 2.5f;
+	m_speed = 4.0f;
 
 	m_dirty = 1;
 
@@ -65,6 +65,11 @@ void FPSCamera::processMouseScroll(float yoffset, float deltaTime) {}
 
 glm::vec3 FPSCamera::getPosition() {
 	return m_eye;
+}
+
+glm::vec3 FPSCamera::getFront()
+{
+	return m_front;
 }
 
 void FPSCamera::updateCameraVectors() {

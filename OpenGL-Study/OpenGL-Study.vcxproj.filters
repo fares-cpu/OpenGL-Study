@@ -53,6 +53,12 @@
     <ClInclude Include="stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model_loading.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fragment.glsl">
@@ -68,6 +74,21 @@
       <Filter>Source Files\shaders</Filter>
     </None>
     <None Include="fragment_noTexture.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="fragment_texPro.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="directionalLight.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="lights.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="pointLight.glsl">
+      <Filter>Source Files\shaders</Filter>
+    </None>
+    <None Include="spotLight.glsl">
       <Filter>Source Files\shaders</Filter>
     </None>
   </ItemGroup>

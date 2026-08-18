@@ -24,6 +24,8 @@ public:
 
     virtual glm::vec3 getPosition() = 0;
 
+    virtual glm::vec3 getFront() = 0;
+
     glm::mat4 perspective() {
 		return glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 1000.0f);
 	}

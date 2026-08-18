@@ -42,7 +42,12 @@ void OrbitCamera::processMouseScroll(float yoffset, float deltaTime) {
 	dirty = true;
 }
 
-glm::vec3 OrbitCamera::getPosition() { return glm::vec3(1.0f); }
+glm::vec3 OrbitCamera::getPosition() { return CalculatePosition(); }
+
+glm::vec3 OrbitCamera::getFront()
+{
+	return target - getPosition();
+}
 
 glm::vec3 OrbitCamera::CalculatePosition() {
 	phi = glm::clamp(phi, -89.0f, 89.0f);

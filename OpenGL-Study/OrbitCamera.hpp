@@ -33,6 +33,8 @@ public:
 	void processMouseScroll(float yoffset, float deltaTime) override;
 
 	glm::vec3 getPosition() override;
+
+	glm::vec3 getFront() override;
 private:
 	glm::vec3 CalculatePosition();
 
